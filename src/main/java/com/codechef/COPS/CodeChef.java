@@ -62,5 +62,5 @@ class CodeChef {
 		}
 		System.err.println("Done in " + ((System.nanoTime() - beginTime) / 1e9) + " seconds.");
 	}
-	
+
 }

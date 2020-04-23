@@ -11,18 +11,18 @@ import java.lang.*;
 import java.io.*;
 
 class CodeChef {
-	
+
 	// change to false before uploading
 	private static final boolean DEBUG = true;
-	
+
 	public static void main(String[] args) throws java.lang.Exception {
 
 		long beginTime = System.nanoTime();
-		
-		String input =  "" + CodeChef.class.getResource("input.txt");
+
+		String input = "" + CodeChef.class.getResource("input.txt");
 		input = input.replace("file:", "");
 		InputStream is = DEBUG ? new FileInputStream(input) : System.in;
-		
+
 		try (Scanner scanner = new Scanner(new BufferedReader(new InputStreamReader(is)))) {
 			int prime[] = { 2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47, 53, 59, 61, 67, 71, 73, 79, 83, 89,
 					97 };
@@ -69,7 +69,6 @@ class CodeChef {
 			}
 		}
 
-		
 		System.err.println("Done in " + ((System.nanoTime() - beginTime) / 1e9) + " seconds.");
 	}
 
